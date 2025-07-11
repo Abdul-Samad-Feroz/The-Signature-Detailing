@@ -12,52 +12,49 @@ html {
   list-style: none;
   box-sizing: border-box;
 }
+
+/* ------------------ Navbar ------------------ */
 nav {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.445);
+  backdrop-filter: blur(4px);
   height: 100px;
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 10;
   font-family: "Montserrat", sans-serif;
-  /* box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.82);
-  -webkit-box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.82);
-  -moz-box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.82); */
 }
-label.logo {
-  color: white;
-  font-size: 25px;
-  line-height: 100px;
-  padding: 0 100px;
-  font-weight: bold;
-}
+
 .logoo {
   height: 100px;
 }
+
 nav ul {
   float: right;
   margin-right: 70px;
+  margin-top: 1px;
 }
+
 nav ul li {
   display: inline-block;
   line-height: 100px;
   margin: 0 5px;
 }
+
 nav ul li a {
   color: white;
-  font-size: 17px;
+  font-size: 15px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
 }
+
 a.active,
 a:hover {
-  background: black;
-  transition: 0.4s ease-in;
-  -webkit-transition: 0.4s ease-in;
-  -moz-transition: 0.4s ease-in;
-  -ms-transition: 0.4s ease-in;
-  -o-transition: 0.4s ease-in;
+  background: rgba(255, 255, 255, 0.179);
+  transition: all 0.5s;
 }
+
 .checkbtn {
   font-size: 22px;
   color: white;
@@ -67,9 +64,11 @@ a:hover {
   cursor: pointer;
   display: none;
 }
+
 #check {
   display: none;
 }
+
 @media (max-width: 1050px) {
   label.logo {
     padding-left: 30px;
@@ -78,41 +77,101 @@ a:hover {
     font-size: 16px;
   }
 }
-/* Responsive media query code for small screen */
+
 @media (max-width: 890px) {
   .checkbtn {
     display: block;
   }
-  label.logo {
-    font-size: 22px;
-  }
+
   ul {
     position: fixed;
     width: 100%;
     height: 100vh;
     background: #2c3e50;
-    top: 80px;
+    top: 100px;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
-  }
+    z-index: 9;
+}
+
   nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
+
   nav ul li a {
     font-size: 20px;
   }
+
   a:hover,
   a.active {
     background: none;
     color: #0082e6;
   }
+
   #check:checked ~ ul {
     left: 0;
   }
 }
 
-/* Hero */
+/* ------------------ Hero Section ------------------ */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 100px; /* To prevent video from going under navbar */
+}
 
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.hero-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+}
