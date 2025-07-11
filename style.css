@@ -13,22 +13,25 @@ html {
   box-sizing: border-box;
 }
 nav {
-  background: black;
-  height: 80px;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100px;
   width: 100%;
   position: fixed;
   top: 0;
   font-family: "Montserrat", sans-serif;
-  box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.82);
+  /* box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.82);
   -webkit-box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.82);
-  -moz-box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.82);
+  -moz-box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.82); */
 }
 label.logo {
   color: white;
   font-size: 25px;
-  line-height: 80px;
+  line-height: 100px;
   padding: 0 100px;
   font-weight: bold;
+}
+.logoo {
+  height: 100px;
 }
 nav ul {
   float: right;
@@ -36,7 +39,7 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  line-height: 80px;
+  line-height: 100px;
   margin: 0 5px;
 }
 nav ul li a {
@@ -48,8 +51,12 @@ nav ul li a {
 }
 a.active,
 a:hover {
-  background: #1b9bff;
-  transition: 0.5s;
+  background: black;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -ms-transition: 0.4s ease-in;
+  -o-transition: 0.4s ease-in;
 }
 .checkbtn {
   font-size: 22px;
@@ -106,4 +113,6 @@ a:hover {
     left: 0;
   }
 }
+
+/* Hero */
 
