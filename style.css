@@ -31,8 +31,8 @@ nav {
 
 nav ul {
   float: right;
-  margin-right: 70px;
-  margin-top: 1px;
+  margin-right: 260px;
+  margin-top: 3px;
 }
 
 nav ul li {
@@ -44,17 +44,33 @@ nav ul li {
 nav ul li a {
   color: white;
   font-size: 15px;
-  padding: 7px 13px;
-  border-radius: 3px;
+  padding: 7px 11px;
+  border-radius: 4px;
   text-transform: uppercase;
 }
 
-a.active,
-a:hover {
+.social-iconn {
+  color: white;
+  margin-left: 3px;
+  font-size: 17px;
+}
+
+.insta {
+  margin-left: 20px;
+}
+nav ul li a:hover {
   background: rgba(255, 255, 255, 0.179);
   transition: all 0.5s;
 }
 
+.social-iconn:hover {
+  color: rgba(255, 255, 255, 0.923);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
 .checkbtn {
   font-size: 22px;
   color: white;
