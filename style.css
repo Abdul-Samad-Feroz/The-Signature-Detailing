@@ -9,7 +9,7 @@ html {
 * {
   padding: 0;
   margin: 0;
-  text-decoration: none;
+  text-decoration: none !important;
   list-style: none;
   box-sizing: border-box;
 }
@@ -23,7 +23,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 10;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .logoo {
@@ -48,29 +48,26 @@ nav ul li a {
   padding: 7px 11px;
   border-radius: 4px;
   text-transform: uppercase;
+  transition: all 0.5s;
 }
 
 .social-iconn {
   color: white;
   margin-left: 3px;
   font-size: 17px;
+  transition: all 0.3s;
 }
 
 .insta {
   margin-left: 20px;
 }
 nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.179);
-  transition: all 0.5s;
+  background: rgba(255, 255, 255, 0.179) !important;
+  color: white !important;
 }
 
 .social-iconn:hover {
   color: rgba(255, 255, 255, 0.923);
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
 }
 .checkbtn {
   font-size: 22px;
@@ -95,7 +92,7 @@ nav ul li a:hover {
   }
 }
 
-@media (max-width: 1066px) {
+@media (max-width: 1099px) {
   .checkbtn {
     display: block;
   }
@@ -104,7 +101,7 @@ nav ul li a:hover {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #2c3e50;
+    background: #2c3e50 !important;
     top: 100px;
     left: -100%;
     text-align: center;
@@ -124,8 +121,8 @@ nav ul li a:hover {
 
   a:hover,
   a.active {
-    background: none;
-    color: #0082e6;
+    background: none !important;
+    color: #0082e6 !important;
   }
 
   #check:checked ~ ul {
@@ -139,7 +136,7 @@ nav ul li a:hover {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 103px;
 }
 
 .hero video {
@@ -165,7 +162,7 @@ nav ul li a:hover {
 .hero-content {
   position: relative;
   z-index: 2;
-  color: #DCDCDC;
+  color: #e0e0e0;
   text-align: center;
   margin-top: 78px;
   padding: 20px;
@@ -173,17 +170,16 @@ nav ul li a:hover {
 
 .hero-content h1 {
   font-size: 68.5312px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Space Grotesk", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   line-height: 1.1;
-  
 }
 
 .hero-content p {
   font-size: 28.7968px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Space Grotesk", sans-serif !important;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 500;
@@ -193,14 +189,62 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 42.6112px;
+    font-size: 42.6112px !important;
   }
-@media (max-width: 398px) {
-  .hero-content {
-    margin-top: 11px;
+  @media (max-width: 398px) {
+    .hero-content {
+      margin-top: 11px !important;
+    }
+  }
+  .hero-content p {
+    font-size: 23.392px !important;
+    margin-top: 0px !important;
   }
 }
-  .hero-content p {
-    font-size: 23.392px;
+
+.book-now {
+  display: inline-block;
+  margin-top: 21px !important;
+  height: 63.95px !important;
+  width: 213.64px !important;
+  padding: 0px 32.2px !important;
+  background-color: #e0e0e0 !important;
+  line-height: 55px !important; 
+  border-style: solid !important;
+  border-width: 6px !important;
+  border-color: #e0e0e0 !important;
+  border-radius: 1.2px !important;
+  transition: all 0.3s linear !important;
+  text-align: center;
+  color: #000000 !important;
+  font-size: 16px !important;
+  text-shadow: none !important;
+  letter-spacing: 0.6px !important;
+  text-transform: uppercase !important;
+  font-family: "Space Grotesk", sans-serif !important;
+  font-style: normal !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.book-now:hover {
+  background-color: #bababa !important;
+  border-color: #bebebe !important;
+  color: #000000 !important;
+}
+
+@media (max-width: 398px) {
+  .book-now {
+    height: 55px !important;
+    width: 180.9px !important;
+    line-height: 45px !important;
+    margin-top: -1px !important;
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 426px) {
+  .book-now {
+    margin-top: 2px !important;
   }
 }
