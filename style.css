@@ -209,7 +209,7 @@ nav ul li a:hover {
   width: 213.64px !important;
   padding: 0px 32.2px !important;
   background-color: #e0e0e0 !important;
-  line-height: 55px !important; 
+  line-height: 55px !important;
   border-style: solid !important;
   border-width: 6px !important;
   border-color: #e0e0e0 !important;
@@ -246,5 +246,35 @@ nav ul li a:hover {
 @media (max-width: 426px) {
   .book-now {
     margin-top: 2px !important;
+  }
+}
+
+.star {
+  margin-top: 20px;
+  margin-left: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+.rating-text p {
+  margin-top: -1px !important;
+  font-size: 17px !important;
+  color: #e0e0e0 !important;
+  font-family: "Raleway", sans-serif !important;
+  font-style: normal;
+  word-wrap: break-word !important;
+  text-align: center !important;
+}
+
+span {
+  font-weight: 700 !important;
+  color: #e0e0e0 !important;
+  font-family: "Raleway", sans-serif !important;
+  font-style: normal !important;
+  white-space: pre-wrap !important;
+}
+
+@media (max-width: 372px) {
+  .hero {
+    height: 111vh !important;
   }
 }
