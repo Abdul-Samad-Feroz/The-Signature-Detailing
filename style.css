@@ -28,6 +28,7 @@ nav {
 
 .logoo {
   height: 100px;
+  cursor: pointer;
 }
 
 nav ul {
@@ -130,6 +131,12 @@ nav ul li a:hover {
   }
 }
 
+@media (max-width: 308px) {
+  .logoo {
+    width: 240px;
+  }
+}
+
 /* ------------------ Hero Section ------------------ */
 .hero {
   position: relative;
@@ -162,9 +169,9 @@ nav ul li a:hover {
 .hero-content {
   position: relative;
   z-index: 2;
-  color: #e0e0e0;
+  color: #e0e0e0 !important;
   text-align: center;
-  margin-top: 78px;
+  margin-top: 81px;
   padding: 20px;
 }
 
@@ -185,6 +192,12 @@ nav ul li a:hover {
   font-weight: 500;
   margin-top: 23px;
   /* text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); */
+}
+
+@media (max-width: 372px) {
+  .hero {
+    height: 112vh !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -273,8 +286,100 @@ span {
   white-space: pre-wrap !important;
 }
 
-@media (max-width: 372px) {
-  .hero {
-    height: 111vh !important;
+/* How It Works Section */
+
+.how-it-works {
+  background: #f0f0f0;
+  height: 100vh;
+  font-family: "Raleway", sans-serif !important;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.how-it-works-header {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 32.1885px;
+  margin-top: 45px;
+  text-align: center;
+  width: 11074px;
+  font-weight: 700px !important;
+  color: #000000;
+} 
+.step-card {
+  margin-top: 19px;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 2px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  border-color: #4a90e2;
+  background: #f8f9fa;
+  cursor: pointer;
+}
+
+.step-number {
+  background: #000000;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-weight: bold;
+}
+
+.step-card:hover .step-number {
+  background: #000000;
+  color: white;
+}
+
+.step-card i {
+  font-size: 48px;
+  color: #000000;
+  margin: 15px 0;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover i {
+  color: #000000;
+  transform: scale(1.1);
+}
+
+.step-card h3 {
+  color: #000000;
+  margin: 15px 0;
+  font-size: 22.912px;
+}
+
+.step-card p {
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+@media (max-width: 1243px) {
+  .how-it-works {
+    height: 100%;
   }
+
+  .how-it-works-header {
+    margin-top: 40px;
+    font-size: 40.1885px;
+  }
+
 }
