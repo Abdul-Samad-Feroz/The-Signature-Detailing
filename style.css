@@ -33,7 +33,7 @@ nav {
 
 nav ul {
   float: right;
-  margin-right: 200px;
+  margin-right: 40px;
   margin-top: 3px;
 }
 
@@ -62,6 +62,38 @@ nav ul li a {
 .insta {
   margin-left: 20px;
 }
+
+.book-noww {
+  margin-left: 11px;
+  display: inline-block;
+  height: 78.4px !important;
+  width: 160.43px !important;
+  padding: 1.5rem 2.2rem !important;
+  background-color: transparent !important;
+  line-height: 1.2rem !important;
+  border-style: solid !important;
+  border-width: 6px !important;
+  border-color: #FAFAFA !important;
+  border-radius: 0.5rem !important;
+  transition: all 0.3s linear !important;
+  text-align: center;
+  color: white !important;
+  font-size: 16px !important;
+  text-shadow: none !important;
+  text-transform: none !important;
+  letter-spacing: 0em !important;
+  font-family: "Raleway", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.book-noww:hover {
+  background-color: white !important;
+  color: #000000 !important;
+}
+
 nav ul li a:hover {
   background: rgba(255, 255, 255, 0.179) !important;
   color: white !important;
