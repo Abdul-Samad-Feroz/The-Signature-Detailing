@@ -73,7 +73,7 @@ nav ul li a {
   line-height: 1.2rem !important;
   border-style: solid !important;
   border-width: 6px !important;
-  border-color: #FAFAFA !important;
+  border-color: #fafafa !important;
   border-radius: 0.5rem !important;
   transition: all 0.3s linear !important;
   text-align: center;
@@ -102,6 +102,7 @@ nav ul li a:hover {
 .social-iconn:hover {
   color: rgba(255, 255, 255, 0.923);
 }
+
 .checkbtn {
   font-size: 22px;
   color: white;
@@ -120,6 +121,7 @@ nav ul li a:hover {
   label.logo {
     padding-left: 30px;
   }
+
   nav ul li a {
     font-size: 16px;
   }
@@ -130,7 +132,7 @@ nav ul li a:hover {
     display: block;
   }
 
-  ul {    
+  ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -142,10 +144,6 @@ nav ul li a:hover {
     z-index: 9;
   }
 
- .book-noww {
-    width: 350px !important;
-    margin-top: 20px;
- }
   nav ul li {
     display: block;
     margin: 50px 0;
@@ -163,7 +161,7 @@ nav ul li a:hover {
     color: #0082e6 !important;
   }
 
-  #check:checked ~ ul {
+  #check:checked~ul {
     left: 0;
   }
 }
@@ -241,11 +239,13 @@ nav ul li a:hover {
   .hero-content h1 {
     font-size: 42.6112px !important;
   }
+
   @media (max-width: 398px) {
     .hero-content {
       margin-top: 11px !important;
     }
   }
+
   .hero-content p {
     font-size: 23.392px !important;
     margin-top: 0px !important;
@@ -344,7 +344,8 @@ span {
   width: 11074px;
   font-weight: 700px !important;
   color: #000000;
-} 
+}
+
 .step-card {
   margin-top: 19px;
   background: white;
@@ -352,7 +353,7 @@ span {
   padding: 30px;
   width: 280px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   border: 2px solid #f0f0f0;
   cursor: pointer;
@@ -360,7 +361,7 @@ span {
 
 .step-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   border-color: #4a90e2;
   background: #f8f9fa;
   cursor: pointer;
@@ -418,5 +419,4 @@ span {
     margin-top: 40px;
     font-size: 40.1885px;
   }
-
 }
