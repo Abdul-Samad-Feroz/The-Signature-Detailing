@@ -1,6 +1,7 @@
 /* Google Fonts Link */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -23,7 +24,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 10;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Raleway", sans-serif !important;
 }
 
 .logoo {
@@ -65,7 +66,7 @@ nav ul li a {
 
 .book-noww {
   margin-left: 11px;
-  display: inline-block;
+  display: inline;
   height: 78.4px !important;
   width: 160.43px !important;
   padding: 1.5rem 2.2rem !important;
@@ -161,7 +162,7 @@ nav ul li a:hover {
     color: #0082e6 !important;
   }
 
-  #check:checked~ul {
+  #check:checked ~ ul {
     left: 0;
   }
 }
@@ -410,7 +411,7 @@ span {
   margin-top: 10px;
 }
 
-@media (max-width: 1243px) {
+@media (max-width: 1253px) {
   .how-it-works {
     height: 100%;
   }
@@ -418,5 +419,104 @@ span {
   .how-it-works-header {
     margin-top: 40px;
     font-size: 40.1885px;
+  }
+}
+
+/* Our Services Section */
+.services {
+  background: white;
+  height: 100%;
+  font-family: "Raleway", sans-serif !important;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.our-services-header h1 {
+  height: auto;
+  width: auto;
+  margin: 0px 0px 0px;
+  letter-spacing: -1.5px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 3rem;
+  margin-top: 16px !important;
+  word-wrap: break-word !important;
+  white-space: pre-wrap !important;
+  line-height: 1.2em !important;
+  text-align: center;
+  text-transform: none;
+  font-weight: 600 !important;
+  font-style: normal;
+  color: #1c1c1c;
+}
+
+.services-cards {
+  margin-top: 26px !important;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards-modify {
+  width: 28.9rem;
+  margin: 4.5px;
+  background-color: white !important;
+  border: none !important;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+.img-setting {
+  height: 445px;
+  object-fit: cover;
+}
+
+.images {
+  height: 600px;
+}
+
+
+.services-cards h4 {
+  color: #000000 !important;
+  font-size: 2rem !important;
+  font-family: "Space Grotesk", sans-serif !important;
+  letter-spacing: -2px;
+  margin-top: -5px !important;
+  margin-left: -12px !important;
+  text-decoration-line: underline !important;
+  text-decoration-style: solid !important;
+  text-decoration-color: currentColor !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 0.2em !important;
+  text-decoration-skip-ink: auto !important;
+}
+
+.services-cards h5 {
+  color: #000000 !important;
+  font-size: 1.2rem !important;
+  font-family: "Raleway", sans-serif !important;
+  letter-spacing: 0px;
+  font-weight: bold;
+  margin-top: -5px !important;
+  margin-left: -12px !important;
+}
+
+.services-cards p {
+  color: #000000 !important;
+  font-family: "Raleway", sans-serif !important;
+  font-size: 1.212rem !important;
+  font-weight: 500;
+  letter-spacing: 0px;
+  margin-top: 2px !important;
+  margin-left: -12px !important;
+} 
+
+
+
+@media (max-width: 768px) {
+  .our-services-header h1 {
+    font-size: 2.2rem !important;
+    margin-top: 9px !important;
   }
 }
