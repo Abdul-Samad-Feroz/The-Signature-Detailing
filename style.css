@@ -513,11 +513,48 @@ span {
   margin-left: -12px !important;
 } 
 
+.book-nowww {
+  display: inline;
+  height: 63.9px !important;
+  /* width: 415px !important; */
+   width: clamp(240px, 60vw, 425px);
+  padding: 1.1rem 2.2rem !important;
+  background-color: #fafafa !important;
+  line-height: 1.2rem !important;
+  border-style: solid !important;
+  border-width: 6px !important;
+  border-color: #000000 !important;
+  transition: all 0.3s linear !important;
+  text-align: center;
+  color: #000000 !important;
+  font-size: 17px !important;
+  text-shadow: none !important;
+  text-transform: none !important;
+  letter-spacing: 0em !important;
+  font-family: "Space Grotesk", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.book-nowww:hover {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+  color: #fafafa !important;
+}
+
 
 
 @media (max-width: 768px) {
   .our-services-header h1 {
     font-size: 2.2rem !important;
     margin-top: 9px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .book-nowww {
+  margin-bottom: 12px !important;
   }
 }
