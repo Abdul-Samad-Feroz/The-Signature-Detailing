@@ -1,6 +1,6 @@
 /* Google Fonts Link */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
@@ -437,7 +437,7 @@ span {
   height: auto;
   width: auto;
   margin: 0px 0px 0px;
-  letter-spacing: -1.5px;
+  letter-spacing: -2.5px;
   font-family: "Space Grotesk", sans-serif;
   font-size: 3rem;
   margin-top: 16px !important;
@@ -446,7 +446,7 @@ span {
   line-height: 1.2em !important;
   text-align: center;
   text-transform: none;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   font-style: normal;
   color: #1c1c1c;
 }
@@ -481,6 +481,7 @@ span {
   color: #000000 !important;
   font-size: 2rem !important;
   font-family: "Space Grotesk", sans-serif !important;
+  font-weight: 4700;
   letter-spacing: -2px;
   margin-top: -5px !important;
   margin-left: -12px !important;
