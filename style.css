@@ -590,15 +590,15 @@ span {
   }
 }
 
-@media (max-width: 500px) {
-  .book-nowww {
-  margin-bottom: 12px !important;
+@media (min-width: 1300px) and (max-width: 1455px) {
+  .cards-modify {
+      width: 26.9rem;
   }
 }
 
-@media (min-width: 1320px) {
+@media (min-width: 1200px) and (max-width: 1360px) {
   .cards-modify {
-    flex: 1;
-    min-height: 0;
+      width: 24.9rem;
   }
 }
+
