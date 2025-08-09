@@ -459,7 +459,7 @@ span {
 }
 
 .cards-modify {
-  width: 27.9rem;
+  width: 28.9rem;
   margin: 4.5px;
   background-color: white !important;
   border: none !important;
@@ -593,5 +593,12 @@ span {
 @media (max-width: 500px) {
   .book-nowww {
   margin-bottom: 12px !important;
+  }
+}
+
+@media (min-width: 1320px) {
+  .cards-modify {
+    flex: 1;
+    min-height: 0;
   }
 }
