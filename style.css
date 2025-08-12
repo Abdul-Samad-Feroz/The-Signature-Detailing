@@ -592,11 +592,24 @@ span {
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1360px) {
+@media (min-width: 1265px) and (max-width: 1360px) {
   .cards-modify {
     width: 24.9rem;
   }
 }
+
+@media (min-width: 1090px) and (max-width: 1265px) {
+  .cards-modify {
+    width: 22.9rem;
+  }
+}
+
+@media (min-width: 1090px) and (max-width: 1265px) {
+  .book-nowww {
+    width: 22.9rem;
+  }
+}
+
 
 /* What Our Coustomers Say Section */
 
