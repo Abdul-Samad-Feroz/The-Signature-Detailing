@@ -1,8 +1,9 @@
-/* Google Fonts Link */
+/* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
@@ -26,24 +27,20 @@ nav {
   z-index: 10;
   font-family: "Raleway", sans-serif !important;
 }
-
 .logoo {
   height: 100px;
   cursor: pointer;
 }
-
 nav ul {
   float: right;
   margin-right: 40px;
   margin-top: 3px;
 }
-
 nav ul li {
   display: inline-block;
   line-height: 100px;
   margin: 0 3px;
 }
-
 nav ul li a {
   color: white;
   font-size: 15px;
@@ -52,18 +49,15 @@ nav ul li a {
   text-transform: uppercase;
   transition: all 0.5s;
 }
-
 .social-iconn {
   color: white;
   margin-left: 3px;
   font-size: 17px;
   transition: all 0.3s;
 }
-
 .insta {
   margin-left: 20px;
 }
-
 .book-noww {
   margin-left: 11px;
   display: inline;
@@ -89,21 +83,17 @@ nav ul li a {
   text-decoration: none !important;
   cursor: pointer;
 }
-
 .book-noww:hover {
   background-color: white !important;
   color: #000000 !important;
 }
-
 nav ul li a:hover {
   background: rgba(255, 255, 255, 0.179) !important;
   color: white !important;
 }
-
 .social-iconn:hover {
   color: rgba(255, 255, 255, 0.923);
 }
-
 .checkbtn {
   font-size: 22px;
   color: white;
@@ -113,26 +103,21 @@ nav ul li a:hover {
   cursor: pointer;
   display: none;
 }
-
 #check {
   display: none;
 }
-
 @media (max-width: 1050px) {
   label.logo {
     padding-left: 30px;
   }
-
   nav ul li a {
     font-size: 16px;
   }
 }
-
 @media (max-width: 1099px) {
   .checkbtn {
     display: block;
   }
-
   ul {
     position: fixed;
     width: 100%;
@@ -144,36 +129,31 @@ nav ul li a:hover {
     transition: all 0.5s;
     z-index: 9;
   }
-
   nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
     text-align: center;
   }
-
   nav ul li a {
     font-size: 20px;
   }
-
   a:hover,
   a.active {
     background: none !important;
     color: #0082e6 !important;
   }
-
   #check:checked ~ ul {
     left: 0;
   }
 }
-
 @media (max-width: 308px) {
   .logoo {
     width: 240px;
   }
 }
 
-/* ------------------ Hero Section ------------------ */
+/* Hero Section */
 .hero {
   position: relative;
   width: 100%;
@@ -181,7 +161,6 @@ nav ul li a:hover {
   overflow: hidden;
   padding-top: 103px;
 }
-
 .hero video {
   position: absolute;
   top: 0;
@@ -190,6 +169,16 @@ nav ul li a:hover {
   width: 100%;
   object-fit: cover;
   z-index: 0;
+  transform: scale(1.04);
+  animation: heroZoom 12s ease-in-out infinite alternate;
+}
+@keyframes heroZoom {
+  from {
+    transform: scale(1.04);
+  }
+  to {
+    transform: scale(1.09);
+  }
 }
 
 .overlay {
@@ -198,7 +187,12 @@ nav ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.55) 60%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
   z-index: 1;
 }
 
@@ -210,24 +204,17 @@ nav ul li a:hover {
   margin-top: 81px;
   padding: 20px;
 }
-
 .hero-content h1 {
   font-size: 68.5312px;
   font-family: "Space Grotesk", sans-serif !important;
-  font-optical-sizing: auto;
   font-weight: 500;
-  font-style: normal;
   line-height: 1.1;
 }
-
 .hero-content p {
   font-size: 28.7968px;
   font-family: "Space Grotesk", sans-serif !important;
-  font-optical-sizing: auto;
-  font-style: normal;
   font-weight: 500;
   margin-top: 23px;
-  /* text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); */
 }
 
 @media (max-width: 372px) {
@@ -235,25 +222,23 @@ nav ul li a:hover {
     height: 112vh !important;
   }
 }
-
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 42.6112px !important;
   }
-
-  @media (max-width: 398px) {
-    .hero-content {
-      margin-top: 11px !important;
-    }
-  }
-
   .hero-content p {
     font-size: 23.392px !important;
-    margin-top: 0px !important;
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 398px) {
+  .hero-content {
+    margin-top: 11px !important;
   }
 }
 
 .book-now {
+  /* DO NOT TOUCH hover logic (kept same) */
   display: inline-block;
   margin-top: 21px !important;
   height: 63.95px !important;
@@ -267,17 +252,13 @@ nav ul li a:hover {
   border-radius: 1.2px !important;
   transition: all 0.3s linear !important;
   text-align: center;
-  color: #000000 !important;
+  color: #000 !important;
   font-size: 16px !important;
-  text-shadow: none !important;
   letter-spacing: 0.6px !important;
   text-transform: uppercase !important;
   font-family: "Space Grotesk", sans-serif !important;
-  font-style: normal !important;
-  text-decoration: none !important;
   cursor: pointer;
 }
-
 .book-now:hover {
   background-color: #bababa !important;
   border-color: #bebebe !important;
@@ -293,7 +274,6 @@ nav ul li a:hover {
     font-size: 15px !important;
   }
 }
-
 @media (max-width: 426px) {
   .book-now {
     margin-top: 2px !important;
@@ -305,30 +285,23 @@ nav ul li a:hover {
   margin-left: 1px;
   transition: color 0.3s ease-in-out;
 }
-
 .rating-text p {
   margin-top: -1px !important;
   font-size: 17px !important;
   color: #e0e0e0 !important;
   font-family: "Raleway", sans-serif !important;
-  font-style: normal;
-  word-wrap: break-word !important;
   text-align: center !important;
 }
-
 span {
   font-weight: 700 !important;
   color: #e0e0e0 !important;
   font-family: "Raleway", sans-serif !important;
-  font-style: normal !important;
-  white-space: pre-wrap !important;
 }
 
-/* How It Works Section */
-
+/* How It Works */
 .how-it-works {
   background: #f0f0f0;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Raleway", sans-serif !important;
   display: flex;
   justify-content: center;
@@ -336,17 +309,15 @@ span {
   flex-wrap: wrap;
   padding: 40px 20px;
 }
-
 .how-it-works-header {
   font-family: "Space Grotesk", sans-serif;
   font-size: 32.1885px;
   margin-top: 45px;
   text-align: center;
-  width: 11074px;
-  font-weight: 700px !important;
+  width: 100%;
+  font-weight: 700 !important;
   color: #000000;
 }
-
 .step-card {
   margin-top: 19px;
   background: white;
@@ -354,20 +325,19 @@ span {
   padding: 30px;
   width: 280px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
   border: 2px solid #f0f0f0;
   cursor: pointer;
+  will-change: transform, box-shadow !important;
 }
-
 .step-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px) !important;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) !important;
   border-color: #4a90e2;
   background: #f8f9fa;
   cursor: pointer;
 }
-
 .step-number {
   background: #000000;
   color: white;
@@ -380,32 +350,27 @@ span {
   margin: 0 auto 20px;
   font-weight: bold;
 }
-
 .step-card:hover .step-number {
-  background: #000000;
-  color: white;
+  background: #000000 !important;
+  color: white !important;
 }
-
 .step-card i {
   font-size: 48px;
   color: #000000;
   margin: 15px 0;
   transition: all 0.3s ease;
 }
-
 .step-card:hover i {
-  color: #000000;
-  transform: scale(1.1);
+  color: #000000 !important;
+  transform: scale(1.1) !important;
 }
-
 .step-card h3 {
-  color: #000000;
+  color: #000;
   margin: 15px 0;
   font-size: 22.912px;
 }
-
 .step-card p {
-  color: #000000;
+  color: #000;
   font-size: 16px;
   line-height: 1.6;
   margin-top: 10px;
@@ -413,16 +378,15 @@ span {
 
 @media (max-width: 1253px) {
   .how-it-works {
-    height: 100%;
+    min-height: 100%;
   }
-
   .how-it-works-header {
     margin-top: 40px;
     font-size: 40.1885px;
   }
 }
 
-/* Our Services Section */
+/* Our Services */
 .services {
   background: white;
   height: 100%;
@@ -432,52 +396,46 @@ span {
   flex-wrap: wrap;
   padding: 40px 20px;
 }
-
 .our-services-header h1 {
-  height: auto;
-  width: auto;
-  margin: 0px 0px 0px;
+  margin: 0;
   letter-spacing: -2px;
   font-family: "Space Grotesk", sans-serif;
   font-size: 3rem;
   margin-top: 16px !important;
-  word-wrap: break-word !important;
-  white-space: pre-wrap !important;
   line-height: 1.2em !important;
   text-align: center;
-  text-transform: none;
   font-weight: 700 !important;
-  font-style: normal;
   color: #1c1c1c;
 }
-
 .services-cards {
   margin-top: 26px !important;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  overflow: hidden;
 }
-
 .cards-modify {
   width: 28.9rem;
   margin: 4.5px;
-  background-color: white !important;
+  background-color: #fff !important;
+  overflow: hidden;
   border: none !important;
   box-shadow: none;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, box-shadow;
 }
 
 .img-setting {
   height: 445px;
   object-fit: cover;
 }
-
 .images {
   height: 600px;
+  cursor:  pointer !important;
 }
 
 .services-cards h4 {
-  color: #000000 !important;
+  color: #000 !important;
   font-size: 2rem !important;
   font-family: "Space Grotesk", sans-serif !important;
   font-weight: 600;
@@ -485,71 +443,51 @@ span {
   margin-top: -5px !important;
   margin-left: -12px !important;
   text-decoration-line: underline !important;
-  text-decoration-style: solid !important;
-  text-decoration-color: currentColor !important;
-  text-decoration-thickness: 1px !important;
   text-underline-offset: 0.2em !important;
-  text-decoration-skip-ink: auto !important;
+  text-decoration-thickness: 1px !important;
 }
-
 .services-cards h5 {
-  color: #000000 !important;
+  color: #000 !important;
   font-size: 1.2rem !important;
   font-family: "Raleway", sans-serif !important;
-  letter-spacing: 0px;
   font-weight: bold;
   margin-top: -5px !important;
   margin-left: -12px !important;
 }
-
 .services-cards p {
-  color: #000000 !important;
+  color: #000 !important;
   font-family: "Raleway", sans-serif !important;
   font-size: 1.212rem !important;
   font-weight: 500;
-  letter-spacing: 0px;
   margin-top: 2px !important;
   margin-left: -12px !important;
 }
-
-.features {
-  display: flex;
-  align-items: center;
-  color: #000000 !important;
-  font-family: "Raleway", sans-serif !important;
-  font-size: 1.212rem !important;
-  font-weight: 500;
-  letter-spacing: 0px;
-  gap: 18px;
-  margin-left: -14px;
-  margin-top: 15px;
-  margin-bottom: -15px !important;
-}
-
-.features svg {
-  position: relative;
-  top: -7px;
-}
-
+.features,
 .featuress {
   display: flex;
   align-items: center;
-  color: #000000 !important;
+  color: #000 !important;
   font-family: "Raleway", sans-serif !important;
   font-size: 1.212rem !important;
   font-weight: 500;
-  letter-spacing: 0px;
   gap: 18px;
   margin-left: -14px;
-  margin-top: -13px;
 }
-
+.features {
+  margin-top: 15px;
+  margin-bottom: -15px !important;
+}
+.features svg,
 .featuress svg {
   position: relative;
   top: -7px;
 }
+.featuress {
+  margin-top: -13px;
+}
 
 .book-nowww {
+  /* DO NOT TOUCH hover logic (kept same) */
   display: inline;
   height: 63.9px !important;
   width: clamp(240px, 60vw, 425px);
@@ -558,24 +496,19 @@ span {
   line-height: 1.2rem !important;
   border-style: solid !important;
   border-width: 6px !important;
-  border-color: #000000 !important;
+  border-color: #000 !important;
   transition: all 0.3s linear !important;
   text-align: center;
-  color: #000000 !important;
+  color: #000 !important;
   font-size: 17px !important;
-  text-shadow: none !important;
   text-transform: none !important;
-  letter-spacing: 0em !important;
   font-family: "Space Grotesk", sans-serif !important;
-  font-style: normal !important;
   font-weight: 500 !important;
-  text-decoration: none !important;
   cursor: pointer;
 }
-
 .book-nowww:hover {
-  background-color: #000000 !important;
-  border-color: #000000 !important;
+  background-color: #000 !important;
+  border-color: #000 !important;
   color: #fafafa !important;
 }
 
@@ -585,65 +518,51 @@ span {
     margin-top: 9px !important;
   }
 }
-
 @media (min-width: 1300px) and (max-width: 1455px) {
   .cards-modify {
     width: 26.9rem;
   }
 }
-
 @media (min-width: 1265px) and (max-width: 1360px) {
   .cards-modify {
     width: 24.9rem;
   }
 }
-
 @media (min-width: 1090px) and (max-width: 1265px) {
   .cards-modify {
     width: 22.9rem;
   }
 }
-
 @media (min-width: 1090px) and (max-width: 1265px) {
   .book-nowww {
     width: 22.9rem;
   }
 }
 
-/* What Our Coustomers Say Section */
-
+/* Testimonials */
 .testimonials-section {
   padding: 80px 0;
   background-color: #f0f0f0;
   font-family: "Raleway", sans-serif;
 }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 .section-header {
   text-align: center;
   margin-bottom: 60px;
   margin-top: 10px;
 }
-
 .section-header h1 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 3.125rem;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   margin-bottom: 15px;
-  word-wrap: break-word !important;
-  white-space: pre-wrap !important;
-  line-height: 1.2em !important;
-  text-align: center;
-  text-transform: none;
   letter-spacing: -2px;
 }
-
 .section-subtitle {
   font-size: 18.5px;
   font-family: "raleway", sans-serif;
@@ -652,51 +571,45 @@ span {
   max-width: 700px;
   margin: 0 auto;
 }
-
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   margin-bottom: 60px;
 }
-
 .testimonial-card {
-  background-color: #fff;
+  background: #fff;
   border-radius: 10px;
   margin-top: 28px;
   padding: 30px;
   cursor: pointer;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  will-change: transform, box-shadow;
 }
-
 .testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
 }
-
 .stars {
   margin-bottom: 14px;
   font-size: 18px;
   display: flex;
   gap: 1px;
 }
-
 .testimonial-text {
   font-size: 18px;
   letter-spacing: -0.5px;
   font-weight: 500;
   line-height: 1.4;
   font-family: "space grotesk", sans-serif;
-  color: #000000;
+  color: #000;
   margin-bottom: 25px;
 }
-
 .customer-info {
   display: flex;
   align-items: center;
 }
-
 .customer-avatar {
   width: 70px;
   height: 70px;
@@ -704,83 +617,59 @@ span {
   overflow: hidden;
   margin-right: 15px;
 }
-
 .customer-avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .customer-details h4 {
   font-size: 18px;
   font-weight: 600;
   color: #1a1a1a;
   margin: 0 0 5px;
 }
-
 .customer-details p {
   font-size: 14px;
   color: #777;
   margin: 0;
 }
 
-.testimonial-cta {
-  text-align: center;
-}
-
-.testimonial-cta p {
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
 @media (max-width: 768px) {
   .testimonials-section {
     padding: 60px 0;
   }
-
-  .section-header h2 {
-    font-size: 32px;
+  .section-header h1 {
+    font-size: 35px;
   }
-
   .testimonials-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 }
 
-/* Frequently Asked Questions Section */
+/* FAQ */
 .faq-sectionn {
-  background-color: white !important;
+  background: #fff !important;
   line-height: 1.6 !important;
   padding: 40px 20px !important;
 }
-
 .containerr {
   max-width: 800px !important;
   margin: 0 auto !important;
 }
-
 .faq-header {
   text-align: center !important;
   margin-bottom: 50px !important;
   margin-top: 40px;
 }
-
 .faq-header h1 {
   font-family: "Space Grotesk", sans-serif !important;
   font-size: 3.125rem;
   font-weight: 700 !important;
   color: #1c1c1c !important;
   margin-bottom: 15px !important;
-  word-wrap: break-word !important;
-  white-space: pre-wrap !important;
-  line-height: 1.2em !important;
-  text-align: center;
-  text-transform: none;
   letter-spacing: -2px;
 }
-
 .faq-header p {
   font-size: 17.3px;
   font-family: "raleway", sans-serif;
@@ -791,16 +680,14 @@ span {
 }
 
 .faq-container {
-  background-color: #fff !important;
+  background: #fff !important;
   border-radius: 10px !important;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07) !important;
   overflow: hidden !important;
 }
-
 .faq-item {
   border-bottom: 1px solid #d2d2d2 !important;
 }
-
 .faq-item:last-child {
   border-bottom: none !important;
 }
@@ -815,15 +702,12 @@ span {
   letter-spacing: -0.3px !important;
   font-weight: 470 !important;
   font-size: 1.445rem !important;
-  color: #000000 !important;
-  transition: all 0.3s ease !important;
+  color: #000 !important;
+  transition: background 0.3s ease !important;
 }
-
 .faq-question:hover {
   background-color: #f8f9fa !important;
-  box-shadow:  rgba(0, 0, 0, 0.09) !important;
 }
-
 .faq-question.active {
   color: #3498db !important;
 }
@@ -832,10 +716,9 @@ span {
   font-family: "raleway", sans-serif !important;
   font-size: 2.2rem !important;
   font-weight: 400 !important;
-  color: #000000 !important;
+  color: #000 !important;
   transition: transform 0.2s ease !important;
 }
-
 .faq-question.active .faq-icon {
   transform: rotate(45deg) !important;
   color: #3498db !important;
@@ -845,24 +728,20 @@ span {
   max-height: 0 !important;
   overflow: hidden !important;
   transition: max-height 0.4s ease, padding 0.4s ease !important;
-  background-color: #f8f9fa !important;
+  background: #f8f9fa !important;
 }
-
 .faq-answer-content {
   font-family: "Raleway", sans-serif !important;
-  font-size: 1.180rem !important;
+  font-size: 1.18rem !important;
   padding: 25px !important;
-  letter-spacing: 0px;
   color: #1c1c1c !important;
   line-height: 1.6 !important;
   font-weight: 470 !important;
 }
-
 .faq-item.active .faq-answer {
   max-height: 500px !important;
   padding-bottom: 20px !important;
 }
-
 .faq-item.active .faq-icon {
   transform: rotate(45deg);
 }
@@ -871,7 +750,6 @@ span {
   margin-bottom: 30px !important;
   position: relative !important;
 }
-
 .search-input {
   width: 100% !important;
   padding: 15px 50px 15px 20px !important;
@@ -881,11 +759,9 @@ span {
   outline: none !important;
   transition: border 0.3s ease !important;
 }
-
 .search-input:focus {
   border-color: #3498db !important;
 }
-
 .search-icon {
   position: absolute !important;
   right: 20px !important;
@@ -894,24 +770,127 @@ span {
   color: #7f8c8d !important;
 }
 
-.category-filter {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 10px !important;
-  margin-bottom: 30px !important;
-}
-
 @media (max-width: 768px) {
   .faq-header h1 {
-    font-size: 2rem !important;
+    font-size: 2.2rem !important;
   }
-
   .faq-question {
     padding: 15px 20px !important;
     font-size: 1rem !important;
   }
-
   .faq-answer-content {
     padding: 0 20px !important;
+  }
+}
+
+ /* Footer Styles */
+        .footer {
+            background-color: #f0f0f0 !important;
+            padding: 40px 0 !important;
+            margin-top: 50px !important;
+            width: 100% !important;
+        }
+
+        .footer-content {
+            display: flex !important;
+            justify-content: space-between !important;
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            padding: 0 20px !important;
+        }
+
+        .footer-section {
+            flex: 1 !important;
+            padding: 0 15px !important;
+        }
+
+        .footer-section h3 {
+            font-size: 1.8rem !important;
+            font-family: "Space Grotesk", sans-serif !important;
+            letter-spacing: -0.9px;
+            font-weight: 600 !important;
+            color: #000000 !important;
+            margin-bottom: 15px !important;
+            display: flex !important;
+            align-items: center !important;
+        }
+
+        .footer-section i {
+            margin-right: 9px !important;
+            color: #3899d9 !important;
+        }
+
+        .footer-section p {
+            color: #1c1c1c !important;
+            font-family: "Raleway", sans-serif !important;
+            font-weight: 500 !important;
+            font-size: 1.1rem !important;
+            margin-bottom: 5px !important;
+        }
+
+         .footer-section p a {
+          color: #171717;
+          transition: 0.3s ease !important;
+}
+
+         .footer-section p a:hover {
+          color: #060606;
+          font-size: 1.14rem !important;
+         }
+
+        /* .contact-info {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 8px !important;
+        } */
+
+        .contact-item {
+            display: flex !important;
+            align-items: center !important;
+        }
+
+        .contact-item i {
+            margin-right: 10px !important;
+            color: #3498db !important;
+            width: 20px !important;
+            text-align: center !important;
+        }
+
+        @media (max-width: 768px) {
+
+            .footer-content {
+                flex-direction: column !important;
+                text-align: center !important;
+            }
+
+            .footer-section {
+                margin-bottom: 20px !important;
+            }
+
+            .contact-item {
+                justify-content: center !important;
+            }
+        }
+
+/* Performance niceties */
+img,
+.cards-modify,
+.testimonial-card {
+  will-change: transform, box-shadow;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .hero video {
+    animation: none !important;
+    transform: none !important;
+  }
+  [data-aos] {
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
