@@ -823,9 +823,13 @@ span {
         .footer-section p {
             color: #1c1c1c !important;
             font-family: "Raleway", sans-serif !important;
-            font-weight: 500 !important;
-            font-size: 1.1rem !important;
+            font-weight: 550 !important;
+            font-size: 1.15rem !important;
             margin-bottom: 5px !important;
+        }
+
+        .footer-section p b{
+          letter-spacing: 0.5px !important;
         }
 
          .footer-section p a {
@@ -835,7 +839,7 @@ span {
 
          .footer-section p a:hover {
           color: #060606;
-          font-size: 1.14rem !important;
+          font-size: 1.16rem !important;
          }
 
         /* .contact-info {
