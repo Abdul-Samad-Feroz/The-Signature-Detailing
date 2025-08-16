@@ -431,7 +431,7 @@ span {
 }
 .images {
   height: 600px;
-  cursor:  pointer !important;
+  cursor: pointer !important;
 }
 
 .services-cards h4 {
@@ -783,98 +783,92 @@ span {
   }
 }
 
- /* Footer Styles */
-        .footer {
-            background-color: #f0f0f0 !important;
-            padding: 40px 0 !important;
-            margin-top: 50px !important;
-            width: 100% !important;
-        }
-
-        .footer-content {
-            display: flex !important;
-            justify-content: space-between !important;
-            max-width: 1200px !important;
-            margin: 0 auto !important;
-            padding: 0 20px !important;
-        }
-
-        .footer-section {
-            flex: 1 !important;
-            padding: 0 15px !important;
-        }
-
-        .footer-section h3 {
-            font-size: 1.8rem !important;
-            font-family: "Space Grotesk", sans-serif !important;
-            letter-spacing: -0.9px;
-            font-weight: 600 !important;
-            color: #000000 !important;
-            margin-bottom: 15px !important;
-            display: flex !important;
-            align-items: center !important;
-        }
-
-        .footer-section i {
-            margin-right: 9px !important;
-            color: #3899d9 !important;
-        }
-
-        .footer-section p {
-            color: #1c1c1c !important;
-            font-family: "Raleway", sans-serif !important;
-            font-weight: 550 !important;
-            font-size: 1.15rem !important;
-            margin-bottom: 5px !important;
-        }
-
-        .footer-section p b{
-          letter-spacing: 0.5px !important;
-        }
-
-         .footer-section p a {
-          color: #171717;
-          transition: 0.3s ease !important;
+/* Footer Styles */
+.footer {
+  background-color: #f0f0f0 !important;
+  padding: 40px 0 !important;
+  margin-top: 50px !important;
+  width: 100% !important;
 }
 
-         .footer-section p a:hover {
-          color: #060606;
-          font-size: 1.16rem !important;
-         }
+.footer-content {
+  display: flex !important;
+  justify-content: space-between !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+}
 
-        /* .contact-info {
-            display: flex !important;
-            flex-direction: column !important;
-            gap: 8px !important;
-        } */
+.footer-section {
+  flex: 1 !important;
+  padding: 0 15px !important;
+}
 
-        .contact-item {
-            display: flex !important;
-            align-items: center !important;
-        }
+.footer-section h3 {
+  font-size: 1.8rem !important;
+  font-family: "Space Grotesk", sans-serif !important;
+  letter-spacing: -0.9px;
+  font-weight: 600 !important;
+  color: #000000 !important;
+  margin-bottom: 15px !important;
+  display: flex !important;
+  align-items: center !important;
+}
 
-        .contact-item i {
-            margin-right: 10px !important;
-            color: #3498db !important;
-            width: 20px !important;
-            text-align: center !important;
-        }
+.footer-section i {
+  margin-right: 9px !important;
+  color: #3899d9 !important;
+}
 
-        @media (max-width: 768px) {
+.footer-section p {
+  color: #1c1c1c !important;
+  font-family: "Space Grotesk", sans-serif !important;
+  font-weight: 550 !important;
+  font-size: 1.15rem !important;
+  margin-bottom: 5px !important;
+}
 
-            .footer-content {
-                flex-direction: column !important;
-                text-align: center !important;
-            }
+.footer-section p b {
+  letter-spacing: 0.5px !important;
+}
 
-            .footer-section {
-                margin-bottom: 20px !important;
-            }
+.footer-section p a {
+  color: #171717;
+  transition: 0.3s ease !important;
+}
 
-            .contact-item {
-                justify-content: center !important;
-            }
-        }
+.footer-section p a:hover {
+  color: #060606;
+  font-size: 1.16rem !important;
+}
+
+
+.contact-item {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.contact-item i {
+  margin-right: 10px !important;
+  color: #3498db !important;
+  width: 20px !important;
+  text-align: center !important;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .footer-section {
+    margin-bottom: 20px !important;
+  }
+
+  .contact-item {
+    justify-content: center !important;
+  }
+}
 
 /* Performance niceties */
 img,
