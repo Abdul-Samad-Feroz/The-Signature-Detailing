@@ -52,23 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // ====== FAQ Search (FIXED: faqItems reference + show/hide with flex) ======
-  const searchInput = document.getElementById('searchInput');
-  if (searchInput) {
-    searchInput.addEventListener('input', () => {
-      const term = searchInput.value.toLowerCase().trim();
-      faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question')?.textContent.toLowerCase() || '';
-        const answer = item.querySelector('.faq-answer-content')?.textContent.toLowerCase() || '';
-        if (!term || question.includes(term) || answer.includes(term)) {
-          item.style.display = '';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    });
-  }
-
   // ====== Smooth anchor scrolling (better easing for some browsers) ======
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
