@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Signature Detailing</title>
     <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="c-style.css" />
+    <link rel="stylesheet" href="w-style.css" />
     <!-- Font Awesome (Icons) -->
     <link
       rel="stylesheet"
@@ -76,64 +76,114 @@
         </a>
       </ul>
     </nav>
+    <div class="our-container">
+      <h1>Our Work</h1>
 
-    <div class="container">
-      <!-- Left side info -->
-      <div class="contact-info">
-        <h2>Contact Us</h2>
-        <p>
-          Have a question or want to work together? Feel free to reach out to us
-          anytime. Our team is always ready to assist you and provide the best
-          possible support. Just drop us a message and we’ll get back to you as
-          soon as possible.
-        </p>
-        <div class="info-item"><i>📍</i>USA</div>
-        <div class="info-item"><i>📞</i> +1 (548) 314 8589</div>
-        <div class="info-item">
-          <i>✉️</i> info.thesignaturedetailing@gmail.com
-        </div>
+      <!-- First Car -->
+      <h2>Detailed Toyota Corolla 2020</h2>
+      <h3>Before</h3>
+      <div class="image-row">
+        <img src="./Images/BMW 5.jpg" alt="Before 1" />
+        <img
+          src="https://via.placeholder.com/300x200?text=Before+2"
+          alt="Before 2"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=Before+3"
+          alt="Before 3"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=Before+4"
+          alt="Before 4"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=Before+5"
+          alt="Before 5"
+        />
       </div>
 
-      <!-- Right side form -->
-      <div class="contact-form">
-        <form
-          id="myForm"
-          action="https://formspree.io/f/xrblvjvp"
-          method="POST"
-        >
-          <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-          />
-          <div id="nameError" class="error"></div>
+      <h3>After</h3>
+      <div class="image-row">
+        <img
+          src="https://via.placeholder.com/300x200?text=After+1"
+          alt="After 1"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=After+2"
+          alt="After 2"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=After+3"
+          alt="After 3"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=After+4"
+          alt="After 4"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=After+5"
+          alt="After 5"
+        />
+      </div>
 
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="_replyto"
-            placeholder="Enter your email"
-          />
-          <div id="emailError" class="error"></div>
+      <!-- Second Car -->
+      <h2>Detailed Honda Civic 2021</h2>
+      <h3>Before</h3>
+      <div class="image-row">
+        <img
+          src="https://via.placeholder.com/300x200?text=Before+1"
+          alt="Before 1"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=Before+2"
+          alt="Before 2"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=Before+3"
+          alt="Before 3"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=Before+4"
+          alt="Before 4"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=Before+5"
+          alt="Before 5"
+        />
+      </div>
 
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Write your message"
-          ></textarea>
-          <div id="messageError" class="error"></div>
+      <h3>After</h3>
+      <div class="image-row">
+        <img
+          src="https://via.placeholder.com/300x200?text=After+1"
+          alt="After 1"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=After+2"
+          alt="After 2"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=After+3"
+          alt="After 3"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=After+4"
+          alt="After 4"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=After+5"
+          alt="After 5"
+        />
+      </div>
 
-          <button type="submit">Send Message</button>
-          <div id="formSuccess" class="success"></div>
-        </form>
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" />
       </div>
     </div>
-    <!-- Footer -->
+
+     <!-- Footer -->
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-section">
@@ -168,6 +218,31 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const images = document.querySelectorAll(".image-row img");
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const close = document.querySelector(".close");
+
+      images.forEach((img) => {
+        img.addEventListener("click", () => {
+          lightbox.style.display = "block";
+          lightboxImg.src = img.src;
+        });
+      });
+
+      close.addEventListener("click", () => {
+        lightbox.style.display = "none";
+      });
+
+      window.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          lightbox.style.display = "none";
+        }
+      });
+    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -178,6 +253,7 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
   </body>
