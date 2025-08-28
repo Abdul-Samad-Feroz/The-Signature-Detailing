@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to right, #f9f9f9, #eef3f9);
+  margin: 0 !important;
+  padding: 0 !important;
+  background: linear-gradient(to right, #f9f9f9, #eef3f9) !important;
   text-decoration: none !important;
   list-style: none !important;
   box-sizing: border-box !important;
@@ -165,21 +165,31 @@ h1 {
   font-size: 54px !important;
   letter-spacing: -1.7px !important;
   margin-bottom: 15px !important;
-  font-weight: 700 !important;
+  font-weight: 650 !important;
   animation: fadeDown 1s ease-in-out !important;
 }
 
 h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: -0.6px;
-  font-size: 2.4rem !important;
-  margin-top: 80px !important;
+  font-size: 2.35rem !important;
+  margin-top: 75px !important;
   animation: fadeUp 1s ease-in-out !important;
 }
 
-.our-container h3 {
-  margin-top: 50px !important;
+.section-subtitle {
+  font-size: 18.9px;
   font-family: "raleway", sans-serif;
+  font-weight: 600;
+  color: #666;
+  max-width: 220px;
+  margin: 0 auto;
+   animation: fadeUp 1s ease-in-out !important;
+}
+
+.our-container h3 {
+  margin-top: 40px !important;
+  font-family: "raleway", sans-serif !important;
   font-size: 1.5rem;
   font-weight: 600 !important;
   margin: 20px 0 10px;
@@ -193,14 +203,14 @@ h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 33px;
+  gap: 32px;
   margin: 20px 0 40px;
   animation: fadeIn 1.2s ease-in-out;
 }
 
 .image-row img {
-  width: 220px;
-  height: 170px;
+  width: 250px;
+  height: 200px;
   object-fit: cover;
   cursor: pointer;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -226,6 +236,7 @@ h2 {
 }
 
 .lightbox-content {
+  margin-top: 50px !important;
   margin: auto;
   display: block;
   max-width: 80%;
@@ -301,17 +312,17 @@ h2 {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 790px) {
   .image-row img {
-    width: 140px;
-    height: 100px;
+    width: 160px;
+    height: 120px;
   }
 }
 
 @media (max-width: 500px) {
   .image-row img {
-    width: 100px;
-    height: 70px;
+    width: 130px;
+    height: 115px;
   }
   h1 {
     font-size: 2rem;
