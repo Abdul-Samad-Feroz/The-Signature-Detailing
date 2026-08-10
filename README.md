@@ -117,12 +117,12 @@ The project was developed with **responsiveness, usability, and user experience*
 
 ### 📱 Mobile Preview
 
-<img width="720" height="1329" alt="image" src="https://github.com/user-attachments/assets/7be4bcaf-efdc-475c-a418-a28c323d4de9" />
+<img width="1080px" height="1920px" alt="image" src="https://github.com/user-attachments/assets/7be4bcaf-efdc-475c-a418-a28c323d4de9" />
 
 
 ### 🎨 Additional Screenshots
 
-#### 🚘 Services
+#### 🚘 Services Section
 
 <img width="1252" height="646" alt="image" src="https://github.com/user-attachments/assets/5a7f1de6-e6fa-47b1-8f87-14ee263ca6d1" />
 
